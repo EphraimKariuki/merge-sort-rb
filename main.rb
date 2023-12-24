@@ -22,4 +22,4 @@ end
 
 #Example Usage:
 
-merg_sort([1, 3, 9, 11, 2, 7, 5])
+p merg_sort([1, 3, 9, 11, 2, 7, 5])
