@@ -8,15 +8,18 @@ def merg_sort(array)
     merg(left, right)
   end  
   
-  def merg(left, right)
+def merg(left, right)
     if left.empty?
-      return right
+        return right
     elsif right.empty?
-      return left
+        return left
     elsif left.first < right.first
-      [left.first] + merg(left[1..left.length], right)
+        [left.first] + merg(left[1..left.length], right)
     else
-      [right.first] + merg(left, right[1..right.length])
+        [right.first] + merg(left, right[1..right.length])
     end
-  end  
-  
+end  
+
+#Example Usage:
+
+merg_sort([1, 3, 9, 11, 2, 7, 5])
